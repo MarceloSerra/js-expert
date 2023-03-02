@@ -1,0 +1,22 @@
+index.js:
+    - Responsible for calling all layers
+
+services:
+    - Business Logic
+    - External calls (Apis, files, DBs etc)
+
+views:
+    - All DOM interaction (HTML, Pages)
+
+controllers
+    - Intermediate layer between views and services/workers
+
+factories:
+    - Import dependencies to create our instances to make calls
+    - Return the function that initializes the flow of that component (init)
+
+workers:
+    - All the heavy logic (that demands CPU)
+    - All that can stutter the screen, like loops, AI/machine learning, webcam processing
+    - Calls ours business logic from services
+    - Will be executed in background
